@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="movingcss/moving.css">
+<link rel="stylesheet" 
+href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>   
+    
+    
+    <header>
+<div class="header1">
+<img src="images/Eswari logo.jpeg" alt="moving.png" class="logom" />
+</div>    
+<nav>
+      <div class="uh" id="uhu">
+        
+
+                   <select onchange="location = this.value;">
+  <option value="Navigate to">Navigate to</option>
+  <option value="index.html">Home</option>
+  <option value="aboutuspage.html">About</option>
+<option value="contactpage.html">Contacts</option>
+</select></div>
+    
+    <ul>
+        <li><a href="index.html" class="o" id="mru" >Home</a></li>
+        <li><a href="aboutuspage.html" class="o">About</a></li>
+         <li><a href="contactpage.html" class="o">Contacts</a></li>
+       
+    </ul>
+</nav>
+</header>
+    <br><br><br>
+  
+   <div class=" mm">
+
+<div class="mySlides fade" style="width:100%">
+  <img src="images/Eswari logo.jpeg" style="width:100%;height: 500px;">
+
+</div>
+
+<div class="mySlides fade" style="width:100%">
+  <img src="images/slide_01.jpg" style="width:100%;height: 500px;">
+  <div class="text" id="t">Moving made easy!</div>
+</div>
+    <div class="textdot" id="t" style="text-align:center;">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span>  
+</div>
+</div>
+<br>
+
+
+<script>    
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+<div class="direct_contact">
+  <a href="https://wa.link/w5695l" target="blank"><img src="https://www.freepnglogos.com/uploads/whatsapp-png-logo-1.png" /></a>
+  <a href="tel:+919014837063"><img src="https://www.pngkey.com/png/full/87-873530_calling-png-hd-whatsapp-and-call-logo.png" /></a>
+</div>
+    
+    <br>
+    
+    
+     <h1 class="para3"><center>Organize Your Move</center></h1>
+<div class="row1">
+  <div class="column1" id="c1">
+    <a href="images/shifting3.jpg" target="_blank"><img src="images/shifting3.webp" id="image_1" class="zoom"></a> 
+      <h3 class="para1">HOUSE SHIFTING </h3>
+      <p class="para2">At Eswari Packers and Movers, we provide reliable and professional shifting services for both local and long-distance moves. Our experienced team handles everything—from safe packing and timely transport to careful unloading and setup at your new place. 
+        We also offer secure car transportation in specially designed trucks.</p>
+  </div>
+
+  <div class="column1">
+   <a href="images/shifting2.jpg" target="_blank"><img src="images/shifting2.jpg" id="image_2" class="zoom"></a>  
+    <h3 class="para1">OFFICE SHIFTING</h3>
+    <p class="para2">Office shifting can be tough, but Eswari Packers and Movers make it smooth and hassle-free. We pack, sort, and transport everything safely with priority-wise loading and timely delivery.
+       Our goal is to minimize downtime so your work continues without disruption.</p>
+  </div>
+
+  <div class="column1" id="c3">  
+    <a href="images/shifting1.jpg" target="_blank"><img src="images/shifting1.webp" id="image_3" class="zoom"></a>  
+   <h3 class="para1">PACKING AND UNPACKING</h3>
+    <p class="para12">Eswari Packers and Movers provide complete packing and unpacking with care and efficiency. 
+      We sort, pack, transport, and unload items priority-wise for smooth setup at your new location. Our team ensures minimal downtime so work resumes quickly.</p>
+  </div>
+  <div class="column1" id="c3">  
+    <a href="images/shifting1.jpg" target="_blank"><img src="images/shifting4.jpg" id="image_3" class="zoom"></a>  
+   <h3 class="para1">LOADING AND UNLOADING</h3>
+    <p class="para12">Eswari Packers and Movers offer reliable loading and unloading services with utmost care and efficiency. We handle items safely, load them systematically, and unload them priority-wise for easy setup at your new location. 
+      Our trained team ensures a smooth and damage-free shifting experience.</p>
+  </div>
+</div>   
+    
+ 
+  
+    <div class="row2">
+  <div class="column2 left2">
+    <img src="images/image5.jpg" id="image_4" height="100%" width="500">
+  </div>
+  <div class="column2 right2">
+    <h1 class="para3">What we do</h1>
+<p>
+  At Eswari Packers and Movers, we provide safe and professional packing and unpacking services to ensure your belongings are well-protected. Our trained team handles loading and unloading with utmost care, making your move smooth and stress-free. 
+  We specialize in local shifting within a 65 km radius of Rajahmundry, offering timely and secure transportation of goods. In addition to household and office moves, we also offer car transportation using specially designed carriers. Our goal is to deliver efficient and reliable moving services tailored to your needs.</p>
+        <a href="learnmore.html"><button class="btn"><b>Learn More</b></button></a>
+  </div>
+</div>
+ 
+    
+<div class="row">
+  <div class="column">
+   <h1 class="para3">Videos of our clients</h1>
+    <p>At Eswari Packers and Movers, customer satisfaction is our top priority, and our clients' positive experiences speak louder than words. We proudly share real videos of happy customers showcasing their smooth shifting journeys. These videos highlight our professional approach, reliable services, and attention to detail. 
+      From packing to unloading, every step is handled with care and expertise. Watching these testimonials gives you a glimpse into the quality and commitment we bring to every move. See for yourself why Eswari Packers and Movers is a trusted name in shifting services.</p>
+     <button class="btn btnview">View All Videos</button>
+  </div>
+  <div class="column">
+    <iframe width="530px" height="370" id="iframev"  src="https://www.youtube.com/embed/M6pDjSwxPiY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
+    
+    
+    
+
+    
+    
+     <div class="news">
+<h1 class="gallerymargin para3"><center>Gallery</center></h1>
+         
+         
+     <div class="row4">
+         
+  <div class="column4">
+   <a href="images/sample1.webp" target="_blank"><img src="images/sample1.webp" alt="slide2" class="image_a1"></a>
+  </div>
+         
+         
+  <div class="column4">
+  <a href="images/sample2.webp" target="_blank"><img src="images/sample2.webp" alt="slide2" class="image_a2"></a>
+  </div>
+         
+  <div class="column4">  
+      <a href="images/sample3.avif" target="_blank"><img src="images/sample3.avif" alt="slide2" class="image_a3"></a>
+  </div>
+         
+</div>  <br><br>
+        
+         
+       <div class="row4">
+         
+  <div class="column4">
+   <a href="images/sample4.avif" target="_blank"><img src="images/sample4.avif" alt="slide2" class="image_a1"></a>
+  </div>
+         
+         
+  <div class="column4">
+  <a href="images/sample5.avif" target="_blank"><img src="images/sample5.avif" alt="slide2" class="image_a2"></a>
+  </div>
+         
+  <div class="column4">  
+      <a href="images/sample6.jpeg" target="_blank"><img src="images/sample6.jpeg" alt="slide2" class="image_a3"></a>
+  </div>
+           
+         
+</div>   <br><br><br><br><br>  
+         
+    </div> 
+    
+ <div class="row6">
+  <div id="c1" class="f1">
+      <h2 class="footerpara"><center>Get in touch</center></h2>
+
+    <center>HP Petrol Bunk Opposte
+        Namavaram Road<br>
+        Rajahmundry-533105<br>
+        Phone: +91 9014837063<br>
+        E-mail:<a id="dec" href="gmail.com" style="color: white;">eswaripackersandmovers1@gmail.com</a></center>
+</div>
+  
+  <div id="c2" class="f2">
+      <h2 class="footerpara"><center>Menu</center></h2>
+
+  <p class="cent"><a href="aboutuspage.html" style="color: 
+
+white;" id="dec">About</a></p>
+   
+        <p class="cent"><a id="dec" href="contactpage.html" style="color: 
+
+white;">Contacts</a></p>
+    </div>
+    <div id="c3" class="f3">
+        <h2 class="footerpara"><center>Follow us</center></h2>
+        
+  <div class="cent123">
+      <a href="https://accounts.google.com/signin/v2/identifier?hl=EN&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="icon" ><i class="fa fa-google-plus" aria-hidden="true"></i></a>&nbsp;&nbsp;
+      <a href="https://twitter.com/login" class="icon"><i class="fa fa-twitter twitter" aria-hidden="true"></i></a>&nbsp;
+                <a href="https://en-gb.facebook.com/login/" class="icon"><i class="fa fa-facebook facebook" aria-hidden="true"></i></a>&nbsp;   
+                <a href="https://in.linkedin.com/" class="icon"><i class="fa fa-linkedin linked" aria-hidden="true"></i></a>
+            </div>
+    </div>
+    <div id="c4" class="f4">
+        <h2 class="footerpara"><center>Join our newsletter</center></h2>
+    <p class="cent" style="color: white">And always stay informed of the latest company news 
+
+and events!</p> 
+    &nbsp; &nbsp;<button class="btn"><b>Sign Up</b></button> 
+        </div>
+    </div> 
+    
+    <div class="copyr">
+        &copy;2024. ESWARI PACKERS AND MOVERS All rights reserved. <a href="privacy" id="privacy">Privacy policy</a><br><br>
+    </div>
+        
+    
+</body>
+</html>
